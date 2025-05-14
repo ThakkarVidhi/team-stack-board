@@ -67,15 +67,19 @@
 Below are snapshots showcasing the core features and UI of the **Strive Board** application, demonstrating its functionality and user interface in action:
 
 - 📊 **Dashboard**: View an overview of your team's activity, ongoing projects, and tasks.
+
   ![Dashboard UI](./assets/dashboard.png)
 
 - 📁 **Project Board**: Manage and track progress for each project with a visually intuitive interface.
+
   ![Project Board UI](./assets/project_board_ui.png)
 
 - 📋 **Task List**: Easily assign and manage tasks, check off completed ones, and track progress.
+
   ![Task List UI](./assets/task_list_ui.png)
 
 - 👥 **Teams UI**: Create and manage teams, assign roles, and collaborate effectively.
+
   ![Teams UI](./assets/teams_ui.png)
 
 ---
