@@ -48,7 +48,6 @@ app.get("/", (req, res) => {
 
 // Catch unhandled requests such as wrong HTTP Method and forward to error handler.
 app.use((req, res, next) => {
-  console.log(req)
   const err = new Error("The requested resource couldn't be found.");
   err.status = 404;
   err.errors = ["Could not find string of resource"];
@@ -57,7 +56,6 @@ app.use((req, res, next) => {
 
 // Generic error handler.
 app.use((err, req, res, next) => {
-  console.log(req)
   res.status(err.status || 500);
   const isProduction = environment === "production";
   res.json({
