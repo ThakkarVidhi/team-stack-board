@@ -6,8 +6,6 @@ const { User, Team, UserTeam } = require("../../db/models");
 const { getUserToken, requireAuth } = require("./utilities/auth");
 
 const router = express.Router();
-console.log(router)
-console.log("User Routes Loaded");
 
 const validateUserFields = [
   check("email")
@@ -54,7 +52,6 @@ router.get(
   "/users",
   requireAuth,
   asyncHandler(async (req, res, next) => {
-    console.log("Getting all users");
     const users = await User.findAll({
       attributes: ["id", "name", "email"],
     });
@@ -67,7 +64,6 @@ router.post(
   "/register",
   validateUserFields,
   asyncHandler(async (req, res) => {
-    console.log("Registering user");
     const validatorErr = validationResult(req);
 
     if (!validatorErr.isEmpty()) {

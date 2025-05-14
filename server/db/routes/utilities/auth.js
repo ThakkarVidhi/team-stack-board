@@ -6,7 +6,6 @@ const { secret, expiresIn } = jwtConfig;
 require("dotenv").config();
 
 const getUserToken = (user) => {
-  console.log("getUserToken", user);
   const userDataForToken = {
     id: user.id,
     email: user.email,
